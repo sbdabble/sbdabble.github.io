@@ -1,0 +1,84 @@
+h1 {
+	color: white;
+	text-align: center;
+	border-color: white;
+	border-width: 2px;
+	background-color: rgb(63, 63, 63);
+	/* background-image: linear-gradient(purple, black); */
+	background-blend-mode: overlay;
+}
+
+.important {
+	font-weight: bolder;
+}
+
+.horiz-center {
+	margin: 0;
+	position:relative;
+	left: 32%;
+	
+	
+
+	
+	
+}
+
+button {
+	border-color: lightslategray;
+	border-width: 5px;
+	border-radius: 10%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-image: linear-gradient(black, purple);
+	color: white;
+	/*text color */
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+p2 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-image: linear-gradient(purple, black);
+
+}
+
+#bubble {
+	background-image: -moz-linear-gradient(purple, black);
+	background-blend-mode: overlay;
+}
+
+#turn {
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 16pt;
+	background-color: #777777;
+	width: 340px;
+}
+
+h2 {
+	color: lavender;
+	text-align: center;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+}
+
+float {
+	padding: 100px;
+}
+
+/* #grad {
+	background-image: linear-gradient(red, yellow);
+} */
