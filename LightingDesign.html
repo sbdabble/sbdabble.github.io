@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <title>Lighting Design</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Montserrat", sans-serif
-        }
+<title>Lighting Design</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
 
-        .w3-row-padding img {
-            margin-bottom: 12px
-        }
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
 
-        /* Set the width of the sidebar to 120px */
-        .w3-sidebar {
-            width: 120px;
-            background: #222;
-        }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
 
-        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    .button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
         #main {
-            margin-left: 120px
+            margin-left: 0
         }
-
-        /* Remove margins from "page content" on small screens */
-        @media only screen and (max-width: 600px) {
-            #main {
-                margin-left: 0
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 
-<body class="w3-black"></body>
+<body class="w3-black w3-margin-left w3-margin-right">
+
+    <h1 class="w3-animate-top w3-jumbo" style="text-align: center;">Lighting Design</h1>
+
+    <body style="text-align: center;">Interested in hiring me for a live show?<br />
+        Check out some of my work and fill out the form below!</body>
+
+</body>
+<form class="w3-dark-grey w3-animate-bottom" style="align-items: center; max-width: 50%; margin: auto; padding: 2%;">
+    <title>Submit a request</title>
+    <h1 style="text-align: center;">Submit a Request</h1>
+    <hr/>
+    <label for="EmailInput">Email</label><br />
+    <input id="EmailInput" type="email">
+    <br />
+    <br />
+
+    <br />
+    <label for="cars">Choose a show type:</label>
+
+    <select id="showType" name="showType">
+        <option value="null">--Select--</option>
+        <option value="musical">Musical</option>
+        <option value="play">Play</option>
+        <option value="cabaret">Cabaret</option>
+        <option value="showcase">Showcase</option>
+        <option value="concert">Concert</option>
+    </select>
+    <br />
+    <br />
+
+
+    <input class="button" type="submit" value="Submit">
+
+</form>
+
 </html>
