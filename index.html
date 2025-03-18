@@ -54,13 +54,13 @@
             <i class="fa fa-home w3-xxlarge"></i>
             <p>HOME</p>
         </a>
+        <a href="LightingDesign/LightingDesign.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-paper-plane w3-xxlarge"></i>
+            <p>LIGHTING DESIGN</p>
+        </a>
         <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-user w3-xxlarge"></i>
             <p>ABOUT</p>
-        </a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-paper-plane w3-xxlarge"></i>
-            <p>LIGHTING DESIGN</p>
         </a>
         <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-eye w3-xxlarge"></i>
@@ -77,10 +77,10 @@
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="LightingDesign/LightingDesign.html" class="w3-bar-item w3-button" style="width:25% !important">LIGHTING</a>
             <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
             <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
             <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">LIGHTING</a>
         </div>
     </div>
 
@@ -88,19 +88,32 @@
     <div class="w3-padding-large" id="main">
         <!-- Header/Home -->
         <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-            <img src="SupPic copy.png" alt="Supriya" class="w3-image w3-animate-top" width="430" height="1108"
+            <img onclick="typeWriter()" src="SupPic copy.png" alt="Supriya" class="w3-image w3-animate-top" width="430" height="1108"
                 style="float:left;">
             <h1 class="w3-jumbo" style="text-align: left;"><span class="w3-hide-small w3-animate-left">This is</span>
                 <br /><span class="w3-hide-small w3-animate-right">Supriya Bolla.</span>
             </h1>
-            <p style="text-align: left;">Honors Computer Science & Spanish Student | Freelance Theatrical Lighting
-                Designer</p>
+            <p id="tagline" style="text-align: left;"></p>
+
+                <script>
+                    var i = 0;
+                    var txt = 'Honors Computer Science & Spanish Student | Freelance Theatrical Lighting Designer';
+                    var speed = 50;
+                    
+                    function typeWriter() {
+                      if (i < txt.length) {
+                        document.getElementById("tagline").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                      }
+                    }
+                    </script>
 
             <!-- About Section -->
             <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
                 <h2 class="w3-text-light-grey">About</h2>
                 <hr class="w3-opacity" />
-                <p>I am an undergraduate student at Kansas State University, pursuing a Bachelors of Science in Computer
+                <p style="text-align: left;">&emsp;I am an undergraduate student at Kansas State University, pursuing a Bachelors of Science in Computer
                     Science and Bachelors of Arts in Spanish.
                     I'm currently working as an undergraduate teaching assistant and Department Ambassador at KSU on top
                     of
