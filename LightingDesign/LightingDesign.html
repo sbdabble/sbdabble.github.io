@@ -46,43 +46,53 @@
     }
 
     @keyframes flicker {
-            0% {
-                opacity: 1;
-            }
-            20% {
-                opacity: 0.3;
-            }
-            40% {
-                opacity: 1;
-            }
-            60% {
-                opacity: 0.5;
-            }
-            80% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0.3;
-            }
+        0% {
+            opacity: 1;
         }
 
-        .flickering-text {
-            color: #ffff; /* You can choose any color */
-            animation: flicker 6s infinite; /* Apply the flicker animation */
+        20% {
+            opacity: 0.3;
         }
-        .neon-border{
-            border: 5px;
-            border-radius: 2%;
-            border-color: aqua;
-            background-color: rgb(53, 53, 62);
-            
+
+        40% {
+            opacity: 1;
         }
+
+        60% {
+            opacity: 0.5;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0.3;
+        }
+    }
+
+    .flickering-text {
+        color: #ffff;
+        /* You can choose any color */
+        animation: flicker 6s infinite;
+        /* Apply the flicker animation */
+    }
+
+    .neon-border {
+        border: 5px;
+        border-radius: 2%;
+        border-color: aqua;
+        background-color: rgb(53, 53, 62);
+
+    }
 </style>
 </head>
 
 <body class="w3-black w3-margin-left w3-margin-right">
 
-    <h1 class="w3-animate-top w3-jumbo flickering-text" style="text-align: center; text-shadow: 0 0 3px #fff, 0 0 7px #10ddf9, 0 0 12px #379deb, 0 0 17px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff;">Lighting Design</h1>
+    <h1 class="w3-animate-top w3-jumbo flickering-text"
+        style="text-align: center; text-shadow: 0 0 3px #fff, 0 0 7px #10ddf9, 0 0 12px #379deb, 0 0 17px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff;">
+        Lighting Design</h1>
 
     <!-- <body style="text-align: center;">Interested in hiring me for a live show?<br />
         Check out some of my work and fill out the form below!</body> -->
@@ -96,14 +106,14 @@
 <form class="neon-border  w3-animate-bottom" style="align-items: center; max-width: 50%; margin: auto; padding: 2%;">
     <title>Submit a request</title>
     <h1 style="text-align: center;">Submit a Request</h1>
-    <hr/>
+    <hr />
     <label for="EmailInput">Email</label><br />
     <input id="EmailInput" type="email">
     <br />
     <br />
 
     <br />
-    <label for="cars">Choose a show type:</label>
+    <label for="showType">Choose a show type:</label>
 
     <select id="showType" name="showType">
         <option value="null">--Select--</option>
@@ -114,17 +124,393 @@
         <option value="concert">Concert</option>
     </select>
     <br />
+    <p>Venue/Address: <input type="text"> </p>
+
     <p>Color Theme:</p>
     <input type="color">
     <input type="color">
     <input type="color">
     <br />
-    
+
     <br />
 
 
     <input class="button" type="submit" value="Submit">
 
 </form>
+
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+        float: left;
+        width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+</style>
+
+<body>
+
+    <h2 style="text-align:center;">Beautiful: The Carole King Musical (MTKC)</h2>
+
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 31</div>
+            <img src="Beautiful_MTKC/TheLocomotionEnd.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 31</div>
+            <img src="Beautiful_MTKC/TheLocomotionSolo.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 31</div>
+            <img src="Beautiful_MTKC/Beautiful.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 31</div>
+            <img src="Beautiful_MTKC/CarolewEnsemble.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 31</div>
+            <img src="Beautiful_MTKC/CarolewEnsemble2.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 31</div>
+            <img src="Beautiful_MTKC/CarolewMom.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">7 / 31</div>
+            <img src="Beautiful_MTKC/CarolewMom2.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">8 / 31</div>
+            <img src="Beautiful_MTKC/TheDriftersSolo.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">9 / 31</div>
+            <img src="Beautiful_MTKC/TheDriftersSolo2.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">10 / 31</div>
+            <img src="Beautiful_MTKC/TheDriftersSolo3.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">11 / 31</div>
+            <img src="Beautiful_MTKC/TheDriftersSolo4.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">12 / 31</div>
+            <img src="Beautiful_MTKC/TheDrifters.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">13 / 31</div>
+            <img src="Beautiful_MTKC/TheDriftersOnBroadway.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">14 / 31</div>
+            <img src="Beautiful_MTKC/WillYouStillLoveMeTomorrowTV.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">15 / 31</div>
+            <img src="Beautiful_MTKC/WillYouStillLoveMeTomorrowSolo.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">16 / 31</div>
+            <img src="Beautiful_MTKC/WillYouStillLoveMeTomorrow2.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">17 / 31</div>
+            <img src="Beautiful_MTKC/TheShirelles1.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">18 / 31</div>
+            <img src="Beautiful_MTKC/TheShirelles2.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">19 / 31</div>
+            <img src="Beautiful_MTKC/BroadwayMedley.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">20 / 31</div>
+            <img src="Beautiful_MTKC/BroadwayMedley2.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">21 / 31</div>
+            <img src="Beautiful_MTKC/CaroleandGerry.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">22 / 31</div>
+            <img src="Beautiful_MTKC/CaroleBarryandCynthia.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">23 / 31</div>
+            <img src="Beautiful_MTKC/CaroleComposing.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">24 / 31</div>
+            <img src="Beautiful_MTKC/CaroleComposing2.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">25 / 31</div>
+            <img src="Beautiful_MTKC/Ensemble.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">26 / 31</div>
+            <img src="Beautiful_MTKC/Ensemble2.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">27 / 31</div>
+            <img src="Beautiful_MTKC/EnsembleSolo.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">28 / 31</div>
+            <img src="Beautiful_MTKC/FinalePiano.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">29 / 31</div>
+            <img src="Beautiful_MTKC/SherrywAssistant.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">30 / 31</div>
+            <img src="Beautiful_MTKC/IFeelTheEarthMove.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">31 / 31</div>
+            <img src="Beautiful_MTKC/OpeningCard.JPG" style="width:100%">
+        </div>
+
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheLocomotionEnd.JPG" style="width:100%"
+                    onclick="currentSlide(1)" alt="The Locomotion">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheLocomotionSolo.JPG" style="width:100%"
+                    onclick="currentSlide(2)" alt="The Locomotion">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/Beautiful.JPG" style="width:100%" onclick="currentSlide(3)"
+                    alt="The Locomotion">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/CarolewEnsemble.JPG" style="width:100%" onclick="currentSlide(4)"
+                    alt="Template">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/CarolewEnsemble2.JPG" style="width:100%" onclick="currentSlide(5)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/CarolewMom.JPG" style="width:100%" onclick="currentSlide(6)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/CarolewMom2.JPG" style="width:100%" onclick="currentSlide(7)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheDriftersSolo.JPG" style="width:100%" onclick="currentSlide(8)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheDriftersSolo2.JPG" style="width:100%" onclick="currentSlide(9)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheDriftersSolo3.JPG" style="width:100%" onclick="currentSlide(10)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheDriftersSolo4.JPG" style="width:100%" onclick="currentSlide(11)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheDrifters.JPG" style="width:100%" onclick="currentSlide(12)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheDriftersOnBroadway.JPG" style="width:100%" onclick="currentSlide(13)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/WillYouStillLoveMeTomorrowTV.JPG" style="width:100%" onclick="currentSlide(14)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/WillYouStillLoveMeTomorrowSolo.JPG" style="width:100%" onclick="currentSlide(15)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/WillYouStillLoveMeTomorrow2.JPG" style="width:100%" onclick="currentSlide(16)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheShirelles1.JPG" style="width:100%" onclick="currentSlide(17)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/TheShirelles2.JPG" style="width:100%" onclick="currentSlide(18)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/BroadwayMedley.JPG" style="width:100%" onclick="currentSlide(19)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/BroadwayMedley2.JPG" style="width:100%" onclick="currentSlide(20)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/CaroleandGerry.JPG" style="width:100%" onclick="currentSlide(21)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/CaroleBarryandCynthia.JPG" style="width:100%" onclick="currentSlide(22)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/CaroleComposing.JPG" style="width:100%" onclick="currentSlide(23)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/CaroleComposing2.JPG" style="width:100%" onclick="currentSlide(24)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/Ensemble.JPG" style="width:100%" onclick="currentSlide(25)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/Ensemble2.JPG" style="width:100%" onclick="currentSlide(26)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/EnsembleSolo.JPG" style="width:100%" onclick="currentSlide(27)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/FinalePiano.JPG" style="width:100%" onclick="currentSlide(28)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/SherrywAssistant.JPG" style="width:100%" onclick="currentSlide(29)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/IFeelTheEarthMove.JPG" style="width:100%" onclick="currentSlide(30)"
+                    alt="Template">
+            </div><div class="column">
+                <img class="demo cursor" src="Beautiful_MTKC/OpeningCard.JPG" style="width:100%" onclick="currentSlide(31)"
+                    alt="Template">
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>
 
 </html>
