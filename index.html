@@ -54,7 +54,8 @@
             <i class="fa fa-home w3-xxlarge"></i>
             <p>HOME</p>
         </a>
-        <a href="https://sbdabble.github.io/LightingDesign/LightingDesign.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a href="https://sbdabble.github.io/LightingDesign/LightingDesign.html"
+            class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-paper-plane w3-xxlarge"></i>
             <p>LIGHTING DESIGN</p>
         </a>
@@ -70,14 +71,15 @@
             <i class="fa fa-envelope w3-xxlarge"></i>
             <p>CONTACT</p>
         </a>
-        
+
     </nav>
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a href="LightingDesign/LightingDesign.html" class="w3-bar-item w3-button" style="width:25% !important">LIGHTING</a>
+            <a href="LightingDesign/LightingDesign.html" class="w3-bar-item w3-button"
+                style="width:25% !important">LIGHTING</a>
             <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
             <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
             <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
@@ -87,33 +89,36 @@
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
         <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-            <img onclick="typeWriter()" src="SupPic copy.png" alt="Supriya" class="w3-image w3-animate-top" width="430" height="1108"
-                style="float:left;">
-            <h1 class="w3-jumbo" style="text-align: left;"><span class="w3-animate-left">This is</span>
-                <br /><span class="w3-animate-right">Supriya Bolla.</span>
-            </h1>
-            <p id="tagline" style="text-align: left;"></p>
-
-                <script>
-                    var i = 0;
-                    var txt = 'Honors Computer Science & Spanish Student | Freelance Theatrical Lighting Designer';
-                    var speed = 50;
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home"></header>
+        <div class="flex-container">
+            <div><img onclick="typeWriter()" src="SupPic copy.png" alt="Supriya" class="w3-image w3-animate-top"
+                    width="430" height="1108" style="float:left;"></div>
+            <div>
+                <h1 class="w3-jumbo" style="text-align: left;"><span class="w3-animate-left">This is</span>
+                    <br /><span class="w3-animate-right">Supriya Bolla.</span>
                     
-                    function typeWriter() {
-                      if (i < txt.length) {
-                        document.getElementById("tagline").innerHTML += txt.charAt(i);
-                        i++;
-                        setTimeout(typeWriter, speed);
-                      }
-                    }
-                    </script>
+                </h1>
+                <p id="tagline" style="text-align: left;"></p>
+                    <script>
+                        var i = 0;
+                        var txt = 'Honors Computer Science & Spanish Student | Freelance Theatrical Lighting Designer';
+                        var speed = 50;
 
+                        function typeWriter() {
+                            if (i < txt.length) {
+                                document.getElementById("tagline").innerHTML += txt.charAt(i);
+                                i++;
+                                setTimeout(typeWriter, speed);
+                            }
+                        }
+                    </script>
+            </div>
             <!-- About Section -->
             <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
                 <h2 class="w3-text-light-grey">About</h2>
-                <hr class="w3-opacity" style="margin: auto; "/>
-                <p style="text-align: left;">&emsp;I am an undergraduate student at Kansas State University, pursuing a Bachelors of Science in Computer
+                <hr class="w3-opacity" style="margin: auto; " />
+                <p style="text-align: left;">&emsp;I am an undergraduate student at Kansas State University, pursuing a
+                    Bachelors of Science in Computer
                     Science and Bachelors of Arts in Spanish.
                     I'm currently working as an undergraduate teaching assistant and Department Ambassador at KSU on top
                     of
@@ -129,6 +134,7 @@
                     voices of others.
                 </p>
             </div>
+        </div>
         </header>
 
         <div class="w3-content w3-justify w3-text-grey" id="about">
@@ -165,9 +171,26 @@
                 </div>
             </div>
 
-            <button class="w3-button w3-light-grey w3-padding-large w3-section">
-                <i class="fa fa-download"></i> Download Resume
-            </button>
+           
+
+<!-- Download Button -->
+<button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="downloadPDF()"><i class="fa fa-download"></i> Download Resume</button>
+
+<script>
+    function downloadPDF() {
+        // URL of the PDF you want to provide for download
+        const pdfUrl = 'Supriya_Bolla_Resume_03182025.pdf';  // Replace with your PDF URL
+
+        // Create a temporary <a> tag to trigger the download
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'Supriya_Bolla_Resume.pdf';  // Optional: You can name the file here
+        link.click();  // Trigger the download
+    }
+</script>
+
+
+
 
             <!-- Grid for pricing tables -->
             <h3 class="w3-padding-16 w3-text-light-grey">Degree Progress</h3>
@@ -260,15 +283,17 @@
                 </p>
                 <p>
                     <a href="https://www.linkedin.com/in/supriya-bolla-962016217/"><i
-                        class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
-                        Linkedin: Supriya Bolla
+                            class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
+                    Linkedin: Supriya Bolla
                 </p>
                 <p>
-                    <a href="https://www.instagram.com/wut_sup_/"><i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
+                    <a href="https://www.instagram.com/wut_sup_/"><i
+                            class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
                     Instagram: wut_sup_
                 </p>
                 <p>
-                    <a href="https://github.com/sbdabble"><i class="fa fa-brands fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
+                    <a href="https://github.com/sbdabble"><i
+                            class="fa fa-brands fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
                     GitHub: sbdabble
                 </p>
             </div>
@@ -291,12 +316,12 @@
         <!-- Footer -->
         <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
             <!-- <a href="https://www.facebook.com/"></a><i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-            
+
             <!--  idk what's going on in here-->
             <!-- <i class="fa fa-snapchat w3-hover-opacity"></i>
             <i class="fa fa-pinterest-p w3-hover-opacity"></i>
             <i class="fa fa-twitter w3-hover-opacity"></i> -->
-            
+
             <p class="w3-medium">Base css from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
                     class="w3-hover-text-green">w3.css</a></p>
             <p class="w3-medium">My webpage is a work in progress, props to W3Schools and Roadmap.sh for their free
