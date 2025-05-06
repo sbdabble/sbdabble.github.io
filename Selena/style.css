@@ -1,20 +1,139 @@
+/* Base layout and appearance */
 body, html {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: scroll;
   font-family: 'Helvetica Neue', sans-serif;
   background-color: #0d0d0d;
   color: white;
+  scroll-behavior: smooth;
 }
 
+/* Sidebar navigation */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: grey;
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  color: white;
+  scrollbar-width: none; /* Firefox */
+}
+ul::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: purple;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Main content container */
+#container {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 0;
+  overflow-y: auto;
+}
+
+/* 3D Model Viewer Styling */
+model-viewer {
+  width: 100%;
+  height: 500px;
+  background-color: #1a1a1a; /* darker tone to match dark theme */
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Neon flicker animation for header */
+@keyframes neonFlicker {
+  0%, 100% {
+    text-shadow: 
+      0 0 10px #ff4fbf, 
+      0 0 20px #ff99cc, 
+      0 0 30px #ff4fbf, 
+      0 0 40px #ff4fbf;
+    opacity: 1;
+  }
+  5% {
+    text-shadow: none;
+    opacity: 0.8;
+  }
+  10% {
+    text-shadow: 
+      0 0 5px #ff4fbf, 
+      0 0 10px #ff99cc;
+    opacity: 0.9;
+  }
+  15% {
+    text-shadow: none;
+    opacity: 0.6;
+  }
+  20% {
+    text-shadow: 
+      0 0 15px #ff4fbf, 
+      0 0 30px #ff99cc;
+    opacity: 1;
+  }
+}
+
+/* Neon Header Style */
+.main-header {
+  font-family: serif;
+  font-size: 64px;
+  color: white;
+  text-shadow: 
+    0 0 10px #ff4fbf, 
+    0 0 20px #ff99cc, 
+    0 0 30px #ff4fbf;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 40px;
+
+  animation: neonFlicker 3s infinite;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.main-header:hover {
+  transform: scale(1.5);
+  animation: neonFlicker 1.5s infinite;
+}
+
+/* Scroll space if needed */
+.spacer {
+  height: 3000px; /* Extra space for scroll testing */
+}
+
+/* Optional three.js compatibility container (if using) */
 #three-canvas {
   display: block;
   width: 100vw;
   height: 100vh;
 }
 
+/* Info box styling (optional) */
 #info {
-  position: absolute;
   top: 20px;
   left: 20px;
   z-index: 1;
@@ -22,57 +141,3 @@ body, html {
   padding: 10px 20px;
   border-radius: 5px;
 }
-
-@keyframes neonFlicker {
-    0%, 100% {
-      text-shadow: 
-        0 0 10px #ff4fbf, 
-        0 0 20px #ff99cc, 
-        0 0 30px #ff4fbf, 
-        0 0 40px #ff4fbf;
-      opacity: 1;
-    }
-    5% {
-      text-shadow: none;
-      opacity: 0.8;
-    }
-    10% {
-      text-shadow: 
-        0 0 5px #ff4fbf, 
-        0 0 10px #ff99cc;
-      opacity: 0.9;
-    }
-    15% {
-      text-shadow: none;
-      opacity: 0.6;
-    }
-    20% {
-      text-shadow: 
-        0 0 15px #ff4fbf, 
-        0 0 30px #ff99cc;
-      opacity: 1;
-    }
-  }
-  
-  #selena-signature-header {
-    font-family: 'Dancing Script', cursive;
-    font-size: 64px;
-    color: #white;
-    text-shadow: 
-      0 0 10px #ff4fbf, 
-      0 0 20px #ff99cc, 
-      0 0 30px #ff4fbf;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 40px;
-  
-    animation: neonFlicker 3s infinite;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  #selena-signature-header:hover {
-    transform: scale(1.05);
-    animation: neonFlicker 1.5s infinite;
-  }
-  
