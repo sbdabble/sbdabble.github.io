@@ -6,43 +6,46 @@
   <title>La Mente de la Reina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
 </head>
 
 <body>
+  <nav class="sidebar">
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
 
-  <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
-  </ul>
-
-  <div style="margin-left:20%;padding:1px 16px;">
+  <main class="content">
     <h1 class="main-header">La Mente de la Reina</h1>
-    <p>FIXME</p>
+    <p class="subtitle">An immersive 3D experience into the Queen’s mind.</p>
 
-    <model-viewer src="models/Head6.glb" alt="A 3D head model"
-                  auto-rotate camera-controls
-                  ar ar-modes="webxr scene-viewer quick-look">
-    </model-viewer>
-    <model-viewer src="models/microphone/scene.gltf" alt="A 3D microphone model"
-                  auto-rotate camera-controls
-                  ar ar-modes="webxr scene-viewer quick-look">
-    </model-viewer>
-    <model-viewer src="models/tf-ds-salon/scene.gltf" alt="A 3D microphone model"
-                  auto-rotate camera-controls
-                  ar ar-modes="webxr scene-viewer quick-look">
-    </model-viewer>
-    <model-viewer src="models/faberge_blender_style/scene.gltf" alt="A 3D microphone model"
-                  auto-rotate camera-controls
-                  ar ar-modes="webxr scene-viewer quick-look">
-    </model-viewer>
-  </div>
+    <div class="model-wrapper">
+      <model-viewer src="models/Head6.glb" alt="A 3D head model"
+                    auto-rotate camera-controls
+                    ar ar-modes="webxr scene-viewer quick-look">
+      </model-viewer>
 
-  
+      <model-viewer src="models/microphone/scene.gltf" alt="A 3D microphone model"
+                    auto-rotate camera-controls
+                    ar ar-modes="webxr scene-viewer quick-look">
+      </model-viewer>
 
+      <model-viewer src="models/tf-ds-salon/scene.gltf" alt="A 3D salon model"
+                    auto-rotate camera-controls
+                    ar ar-modes="webxr scene-viewer quick-look">
+      </model-viewer>
+
+      <model-viewer src="models/faberge_blender_style/scene.gltf" alt="A 3D Fabergé model"
+                    auto-rotate camera-controls
+                    ar ar-modes="webxr scene-viewer quick-look">
+      </model-viewer>
+    </div>
+  </main>
 </body>
 
 </html>
