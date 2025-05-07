@@ -1,0 +1,11 @@
+Model Information:
+* title:	Female Head Sculpt
+* source:	https://sketchfab.com/3d-models/female-head-sculpt-ae24c33594a046519014fdc78758a8ec
+* author:	Aconear (https://sketchfab.com/Aconear)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Female Head Sculpt" (https://sketchfab.com/3d-models/female-head-sculpt-ae24c33594a046519014fdc78758a8ec) by Aconear (https://sketchfab.com/Aconear) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
