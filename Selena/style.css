@@ -154,3 +154,19 @@ model-viewer:hover {
   color: #ffffff;
   text-decoration: underline;
 }
+
+
+.book-covers {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.book-covers img {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

@@ -11,88 +11,97 @@
 </head>
 
 <body>
+  <!-- Sidebar Navigation -->
   <nav class="sidebar">
     <ul>
-      <li><a class="active" href="#home">Home</a></li>
+      <li><a class="active" href="#modelos">Home</a></li>
       <li><a href="#intro">Intro</a></li>
-      <li><a href="#carerra">Carerra</a></li>
+      <li><a href="#carrera">Carrera</a></li>
       <li><a href="#citas">Citas</a></li>
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <main class="content">
     <h1 class="main-header">La Mente de la Reina</h1>
     <p class="subtitle">An immersive 3D experience into the Queen’s mind.</p>
 
-    <div class="model-wrapper">
-      <model-viewer src="models/Head6.glb" alt="A 3D head model"
+    <!-- 3D Model Section -->
+    <div class="model-wrapper" id="modelos">
+      <model-viewer src="models/Head6.glb" alt="3D head model"
                     auto-rotate camera-controls
                     ar ar-modes="webxr scene-viewer quick-look"
                     href="#intro">
       </model-viewer>
 
-      <model-viewer src="models/microphone/scene.gltf" alt="A 3D microphone model"
+      <model-viewer src="models/microphone/scene.gltf" alt="3D microphone model"
                     auto-rotate camera-controls
                     ar ar-modes="webxr scene-viewer quick-look"
                     href="#carrera">
       </model-viewer>
 
-      <model-viewer src="models/tf-ds-salon/scene.gltf" alt="A 3D salon model"
+      <model-viewer src="models/tf-ds-salon/scene.gltf" alt="3D salon model"
                     auto-rotate camera-controls
                     ar ar-modes="webxr scene-viewer quick-look">
       </model-viewer>
 
-      <model-viewer src="models/faberge_blender_style/scene.gltf" alt="A 3D Fabergé model"
+      <model-viewer src="models/faberge_blender_style/scene.gltf" alt="3D Fabergé model"
                     auto-rotate camera-controls
                     ar ar-modes="webxr scene-viewer quick-look">
       </model-viewer>
 
-
-      <model-viewer src="models/minimalistic_modern_bedroom/scene.gltf" alt="A 3D Fabergé model"
+      <model-viewer src="models/minimalistic_modern_bedroom/scene.gltf" alt="3D bedroom model"
                     auto-rotate camera-controls
                     ar ar-modes="webxr scene-viewer quick-look">
       </model-viewer>
 
-      <model-viewer src="models/old_tv/scene.gltf" alt="A 3D Fabergé model"
+      <model-viewer src="models/old_tv/scene.gltf" alt="3D old TV model"
                     auto-rotate camera-controls
                     ar ar-modes="webxr scene-viewer quick-look">
       </model-viewer>
 
-      <model-viewer src="models/chapathi/scene.gltf" alt="A 3D Fabergé model"
+      <model-viewer src="models/chapathi/scene.gltf" alt="3D chapathi model"
                     auto-rotate camera-controls
                     ar ar-modes="webxr scene-viewer quick-look">
       </model-viewer>
     </div>
 
-
+    <!-- Introduction Section -->
     <div class="info-blurb" id="intro">
-      <h2>Una ventaja a Selena</h1>
+      <h2>Una Ventaja a Selena</h2>
       <hr/>
       <p>
-        This is placeholder text for an introsuction into 
-        the projects premise. Introduces A house on Mango 
-        Stree, A room of one's own s the room premise, and 
-        I am not your perfect mexincan daughter as a cultural
-        connect to personal identity. THis will also elaborate 
-        on how n one can really undersatand what selena was 
-        thinking becaus ewe d not have her first hand ccounts 
-        for much of the mystery surrounding how she chose to 
-        divide her time. Ultimately, Selena's identity was 
-        all in how she viewed herself, and it makes an iportnat 
-        distinction with Julia Reyes finding tht out about 
-        herself as well. She is who she views herseflf to be.
+        FIXME: English premise, need to convey in spanish, include premise of buldusroman
+        
+        <br/><br/>
+        This project is inspired by the layered portrayals of identity in texts such as 
+    <em>A House on Mango Street</em>, <em>A Room of One’s Own</em>, and 
+    <em>I Am Not Your Perfect Mexican Daughter</em>. Each work explores how space, 
+    silence, and self-perception shape a woman’s identity. Selena Quintanilla, though 
+    celebrated, remains partly enigmatic—much of her personal interiority is unknown to 
+    us. Through this immersive 3D experience, we imagine what it might have felt like to 
+    exist within her creative, cultural, and private spaces. Like Julia Reyes in Erika 
+    Sánchez’s novel, Selena’s journey is one of defining herself on her own terms, away 
+    from external expectations. This project reflects on that quiet revelation of self.
+      </p>
+
+      <div class="book-covers">
+        <img src="Images/HouseOnMangoStreet.jpg" alt="The House on Mango Street cover">
+        <img src="Images/IAmNotYourPerfectMexicanDaughter.jpg" alt="I Am Not Your Perfect Mexican Daughter cover">
+      </div>
+      
+    </div>
+
+    <!-- Career Section -->
+    <div class="info-blurb" id="carrera">
+      <h2>Como la Carrera</h2>
+      <hr/>
+      <p>
+        This is placeholder text for the career section.
       </p>
     </div>
 
-    <div class="info-blurb" id="carerra">
-      <h2>Como la carerra</h1>
-      <hr/>
-      <p>
-        This is placeholder text 
-      </p>
-    </div>
-
-
+    <!-- Citations -->
     <div id="citas">
       <h2>3D Model Credits</h2>
       <ul>
@@ -133,8 +142,6 @@
         </li>
       </ul>
     </div>
-    
-    
   </main>
 </body>
 
