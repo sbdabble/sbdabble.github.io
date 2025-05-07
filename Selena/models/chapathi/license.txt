@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chapathi
+* source:	https://sketchfab.com/3d-models/chapathi-5276969a17d24f2ea33e57e9c78c8919
+* author:	Sandeep Kakani (https://sketchfab.com/sandeepsandykakani)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chapathi" (https://sketchfab.com/3d-models/chapathi-5276969a17d24f2ea33e57e9c78c8919) by Sandeep Kakani (https://sketchfab.com/sandeepsandykakani) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

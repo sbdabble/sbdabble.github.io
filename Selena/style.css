@@ -111,3 +111,46 @@ model-viewer:hover {
 .sidebar {
   scrollbar-width: none;
 }
+
+
+
+/* Citation formatting */
+
+#citas {
+  margin-top: 60px;
+  padding: 20px 30px;
+  background-color: #1a1a1a;
+  border-left: 5px solid #8e2de2;
+  border-radius: 10px;
+  color: #e0e0e0;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+#citas h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ff99cc;
+  text-shadow: 0 0 5px #ff4fbf;
+}
+
+#citas ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+#citas li {
+  margin-bottom: 10px;
+}
+
+#citas a {
+  color: #8bd7ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#citas a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
