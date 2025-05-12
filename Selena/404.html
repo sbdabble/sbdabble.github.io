@@ -1,70 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Página No Encontrada | La Mente de la Reina</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #000000;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <title>Página No Encontrada | La Mente de la Reina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Make sure content stays at the top */
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            box-sizing: border-box;
+        }
 
-    h1 {
-      font-size: 72px;
-      color: #fff;
-      text-shadow: 0 0 10px #e600ff, 0 0 20px #9e00ff;
-      animation: flicker 2s infinite;
-    }
+        h1 {
+            font-size: 72px;
+            color: #fff;
+            text-shadow: 0 0 10px #e600ff, 0 0 20px #9e00ff;
+            animation: flicker 2s infinite;
+        }
 
-    p {
-      font-size: 20px;
-      color: #ccc;
-      margin: 20px 0;
-    }
+        p {
+            font-size: 20px;
+            color: #ccc;
+            margin: 20px 0;
+        }
 
-    a {
-      color: #ff69d4;
-      text-decoration: none;
-      border: 2px solid #ff69d4;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
+        a {
+            color: #ff69d4;
+            text-decoration: none;
+            border: 2px solid #ff69d4;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
 
-    a:hover {
-      background-color: #ff69d4;
-      color: #000;
-      text-shadow: none;
-    }
+        a:hover {
+            background-color: #ff69d4;
+            color: #000;
+            text-shadow: none;
+        }
 
-    @keyframes flicker {
-      0%, 100% { text-shadow: 0 0 10px #ff00e6, 0 0 20px #c200c2; }
-      50% { text-shadow: 0 0 5px #ff00e6, 0 0 10px #c200c2; opacity: 0.9; }
-      75% { opacity: 0.7; }
-    }
-  </style>
+        @keyframes flicker {
+            0%,
+            100% {
+                text-shadow: 0 0 10px #ff00e6, 0 0 20px #c200c2;
+            }
+
+            50% {
+                text-shadow: 0 0 5px #ff00e6, 0 0 10px #c200c2;
+                opacity: 0.9;
+            }
+
+            75% {
+                opacity: 0.7;
+            }
+        }
+
+        /* Style for iframe container to make it act as a footer */
+        .iframe-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 400px; /* Adjust as per the height of your animation */
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            animation: slideIn 2s ease-out; /* Optional animation */
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(100%); /* Start below the screen */
+            }
+
+            100% {
+                transform: translateY(0); /* Slide to the bottom */
+            }
+        }
+    </style>
 </head>
+
 <body>
     <h1>404</h1>
     <p>Uy... algo salió mal al cargar esta página.</p>
     <p>Asegúrate de estar usando uno de estos navegadores:</p>
     <ul>
-      <li>Google Chrome</li>
-      <li>Microsoft Edge</li>
-      <li>Samsung Internet</li>
-      <li>Chrome Canary</li>
+        <li>Google Chrome</li>
+        <li>Microsoft Edge</li>
+        <li>Samsung Internet</li>
+        <li>Chrome Canary</li>
     </ul>
-    <a href="/">Regresar al inicio</a>
-  </body>
-  
+    <p>y hacen [Ctrl + Shift + R] en el inicio</p>
+    <a href="index.html" style="z-index: 5;">Regresar al inicio</a>
+
+
+    <!-- Footer animation with iframe -->
+    <div class="iframe-footer">
+        <iframe src="Bus/index.html"></iframe>
+    </div>
+</body>
+
 </html>
