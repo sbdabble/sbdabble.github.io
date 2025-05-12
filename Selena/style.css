@@ -194,3 +194,41 @@ model-viewer:hover {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+.book-hover {
+  position: relative;
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+}
+
+.book-hover img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.book-hover:hover img {
+  transform: scale(1.05);
+}
+
+.book-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.85);
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.book-hover:hover .book-info {
+  opacity: 1;
+}
