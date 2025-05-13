@@ -17,7 +17,7 @@
       <li style="margin:5% ; font-size: 2%; text-align: center;">KSU: SPAN 560 || Supriya Bolla</li>
       <li><a class="active" href="#modelos">Inicio</a></li>
       <li><a href="#tesis">Thesis</a></li>
-      <li><a href="#intro">Intro</a></li>
+      <li><a href="#abstract">Abstract</a></li>
       <li><a href="#carrera">Carrera</a></li>
       <li><a href="#personal">Vida Personal</a></li>
       <li><a href="#spanglish">Spanglish</a></li>
@@ -91,97 +91,200 @@
           </model-viewer>
 
           <div class="model-blurb">
-            <h2>Intro: En la Mente de Selena</h2>
-            <hr />
-            <p>This is a description lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum
-              dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+            <div class="info-blurb" id="abstract">
+              <div>
+                <h2>Abstract: Una Ventaja a Selena</h2>
+                <hr />
+                <p>
+                  Este proyecto presenta un modelo digital interactivo que explora las complejidades de la identidad de
+                  Selena Quintanilla más allá de su imagen pública. A través de una representación simbólica en 3D de la
+                  cabeza de Selena —concebida como una casa con "habitaciones" internas— se invita al usuario a
+                  reflexionar sobre las múltiples dimensiones de su vida: como artista tejana, mujer bicultural y figura
+                  moldeada, e incluso distorsionada, por los medios. Inspirado en La casa en Mango Street de Sandra
+                  Cisneros y A Room of One’s Own de Virginia Woolf, el entorno virtual actúa como un espacio metafórico
+                  para imaginar la interioridad de Selena.
+                  <br />
+                  <br />
+                  Cada habitación del modelo representa un aspecto clave de su identidad. “La Boutique” explora la
+                  autoimagen y el empoderamiento a través de la moda, destacando su iniciativa empresarial como una
+                  forma de autonomía. “El Estudio de Grabación” aborda la dualidad cultural de cantar en inglés y
+                  español, así como la presión de representar a una comunidad diversa. “La Sala de Televisión” se enfoca
+                  en el idioma y la pertenencia cultural, revelando los desafíos de vivir entre dos mundos y de ser
+                  símbolo para jóvenes chicanos/as biculturales.
+                  <br />
+                  <br />
+                  La navegación del modelo es no lineal: el usuario elige qué faceta explorar primero. Cada sección
+                  contiene elementos visuales —como vestidos, micrófonos o TV's— acompañados de texto y material
+                  audiovisual que contextualiza su significado. Aunque los objetos no son interactivos, invitan a una
+                  contemplación activa.
+                  <br />
+                  <br />
+                  Este proyecto cuestiona las representaciones simplificadas de Selena, y ofrece una experiencia
+                  introspectiva que revela su complejidad como persona. Asimismo, ilumina las tensiones culturales
+                  compartidas por muchas personas mexicoamericanas o inmigrantes en general en torno a la identidad, el
+                  lenguaje y la pertenencia.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="model-block">
 
-          <div class="model-blurb">
-            <h2>El Estudio de Grabación</h2>
-            <hr />
+        <h1 id="carrera" style="text-align: center;">Como La Carrera</h2>
+          <hr />
+          <div class="model-block">
 
-            <p>Description of the 3D microphone model.</p>
+            <div class="model-blurb">
+              <h2>El Estudio de Grabación</h2>
+              <hr />
+
+              <p>Este micrófono representa las presiones contradictorias que enfrentó Selena con su voz: por un lado, la
+                exigencia de grabar en inglés para alcanzar el éxito comercial en el mercado estadounidense; por otro,
+                la necesidad de cantar en español para construir una base de seguidores leales dentro de la comunidad
+                latina. Su voz, más allá de ser un instrumento musical, se convierte en un símbolo de latinidad híbrida
+                y resistencia cultural.
+                <br />
+                <br />
+                Esta tensión entre las expectativas externas y la identidad interna refleja la experiencia de Julia
+                Reyes en I Am Not Your Perfect Mexican Daughter, quien también lucha con el peso de la dualidad cultural
+                y el esfuerzo por definirse en sus propios términos. Al igual que Selena, Julia navega una existencia
+                bilingüe y bicultural, que se le impulsa a capitalizar para obtener una ventaja competitiva y acceder a
+                la educación. Ambas se ven obligadas, a menudo, a alternar entre códigos, a conformarse o a resistir,
+                todo mientras buscan autenticidad en un mundo que exige claridad.
+
+              </p>
+            </div>
+
+            <model-viewer src="models/microphone/scene.gltf" alt="3D microphone model" auto-rotate camera-controls ar
+              ar-modes="webxr scene-viewer quick-look" href="#carrera">
+            </model-viewer>
+
+
           </div>
 
-          <model-viewer src="models/microphone/scene.gltf" alt="3D microphone model" auto-rotate camera-controls ar
-            ar-modes="webxr scene-viewer quick-look" href="#carrera">
-          </model-viewer>
+          <div class="model-block">
+            <model-viewer src="models/viola_desmond_beauty_salon/scene.gltf" alt="3D salon model" auto-rotate
+              camera-controls ar ar-modes="webxr scene-viewer quick-look">
+            </model-viewer>
 
+            <div class="model-blurb">
+              <h2>La Botique</h2>
+              <hr />
 
-        </div>
-
-        <div class="model-block">
-          <model-viewer src="models/viola_desmond_beauty_salon/scene.gltf" alt="3D salon model" auto-rotate
-            camera-controls ar ar-modes="webxr scene-viewer quick-look">
-          </model-viewer>
-
-          <div class="model-blurb">
-            <h2>La Botique</h2>
-            <hr />
-
-            <p>Description of the Viola Desmond beauty salon model.</p>
-          </div>
-        </div>
-
-        <div class="model-block">
-          <div class="model-blurb">
-            <h2>Pasatiempos: Fabergé</h2>
-            <hr />
-
-            <p>Description of the Fabergé egg model styled in Blender.</p>
+              <p>Esta habitación invita al visitante a explorar el mundo de la moda como una extensión del poder
+                creativo y la construcción de identidad de Selena. A través de vestidos diseñados por ella misma y otros
+                elementos visuales, La Boutique representa su esfuerzo consciente por tomar control de su imagen pública
+                y construir una marca personal auténtica, lejos de los estereotipos impuestos por la industria del
+                entretenimiento.
+                <br />
+                <br />
+                Selena no solo fue cantante, sino también diseñadora y empresaria. En Corpus: A Home Movie About Selena,
+                se rescatan momentos en los que ella habla con pasión sobre cómo el estilo puede empoderar a las jóvenes
+                chicanas, animándolas a expresarse y soñar en grande. Su colaboración con Martin Gómez y Yolanda
+                Saldívar en el desarrollo de su línea de ropa refleja su deseo de abrir espacios para otras mujeres
+                latinas en el mundo del diseño. La Boutique es un homenaje a esa visión: una mezcla de estética,
+                estrategia y autoafirmación.
+              </p>
+            </div>
           </div>
 
-          <model-viewer src="models/faberge_blender_style/scene.gltf" alt="3D Fabergé model" auto-rotate camera-controls
-            ar ar-modes="webxr scene-viewer quick-look">
-          </model-viewer>
+          <h1 id="personal" style="text-align: center;">Vida Personal</h1>
+          <hr />
+          <div class="model-block">
+            <div class="model-blurb">
+              <h2>Pasatiempos: Fabergé</h2>
+              <hr />
+
+              <p>Para los fans, esta pasión tranquila de Selena salió a la luz muchos años después, a veces en historias
+                exageradas. El tema de los huevos aparece en el libro El Secreto de Selena, donde se menciona un “anillo
+                de huevo”, un anillo dorado con forma de huevo que le regalaron poco antes de su muerte. Así, su
+                colección, que era algo inocente y personal, quedó relacionada con el misterio y la traición. Pero su
+                hermana Suzette recordó que para Selena esos huevos eran recuerdos especiales: “cada huevo cuenta una
+                historia”. Nunca fueron parte de su imagen como artista ni aparecieron en sus videos o fotos.
+                Simplemente estaban en su casa, decorando sus estantes. En vida, los coleccionaba solo para ella.
+                Después de su muerte, se volvieron un símbolo emotivo que el público llegó a conocer solo a través de
+                otras personas.</p>
+            </div>
+
+            <model-viewer src="models/faberge_blender_style/scene.gltf" alt="3D Fabergé model" auto-rotate
+              camera-controls ar ar-modes="webxr scene-viewer quick-look">
+            </model-viewer>
 
 
-        </div>
-
-        <div class="model-block">
-          <model-viewer src="models/minimalistic_modern_bedroom/scene.gltf" alt="3D bedroom model" auto-rotate
-            camera-controls ar ar-modes="webxr scene-viewer quick-look">
-          </model-viewer>
-
-          <div class="model-blurb">
-            <h2>Modern Bedroom Model</h2>
-            <hr />
-
-            <p>Description of the minimalistic modern bedroom model.</p>
           </div>
-        </div>
 
-        <div class="model-block">
+          <div class="model-block">
+            <model-viewer src="models/minimalistic_modern_bedroom/scene.gltf" alt="3D bedroom model" auto-rotate
+              camera-controls ar ar-modes="webxr scene-viewer quick-look">
+            </model-viewer>
 
-          <div class="model-blurb">
-            <h2>Old TV Model</h2>
-            <hr />
+            <div class="model-blurb">
+              <h2>El Dormitorio</h2>
+              <hr />
 
-            <p>Description of the vintage television model.</p>
+              <p>En Corpus: Una película casera sobre Selena, la directora Lourdes Portillo recoge conversaciones entre
+                intelectuales que especulan sobre la sexualidad de Selena, a menudo relacionando su muerte con un
+                “crimen pasional”. Algunos sugieren un deseo queer no expresado, especialmente por parte de Yolanda
+                Saldívar, pero la realidad es que Selena nunca habló públicamente sobre su sexualidad más allá de su
+                matrimonio. La forma en que encontraba amor y consuelo era profundamente suya, algo conocido solo por
+                ella y por quienes eligió compartirlo. Aunque no se identificó como lesbiana, su figura femenina, segura
+                y poderosa la convirtió en un ícono dentro de comunidades queer. Tras su muerte, su imagen ha ofrecido
+                un espacio de identificación, consuelo y libertad. Sin embargo, debemos reconocer que su mundo
+                interior—sus emociones, deseos y verdades—permanece fuera de nuestro alcance. Cualquier suposición sobre
+                su sexualidad no deja de ser eso: una suposición. Su verdad vivió en silencio, como muchas verdades
+                íntimas.</p>
+            </div>
           </div>
-          <model-viewer src="models/old_tv/scene.gltf" alt="3D old TV model" auto-rotate camera-controls ar
-            ar-modes="webxr scene-viewer quick-look">
-          </model-viewer>
 
 
-        </div>
+          <h1 id="spanglish" style="text-align: center;">Spanglish</h1>
+          <hr />
+          <div class="model-block">
 
-        <div class="model-block">
-          <model-viewer src="models/chapathi/scene.gltf" alt="3D chapathi model" auto-rotate camera-controls ar
-            ar-modes="webxr scene-viewer quick-look">
-          </model-viewer>
+            <div class="model-blurb">
+              <h2>TV: Telenovela Herencia </h2>
+              <hr />
 
-          <div class="model-blurb">
-            <h2>Chapathi Model</h2>
-            <hr />
+              <p>Selena no creció hablando español con fluidez; de hecho, aprendió mucho viendo telenovelas. Como muchas
+                personas de segunda generación en EE. UU., tuvo que reconectar activamente con su herencia para sentirse
+                cómoda con su identidad hispana. Su spanglish, que algunos veían como “incorrecto”, se transformó en una
+                expresión poderosa de pertenencia dual. A través de su música y su presencia, hizo que millones de
+                chicanos tejanos se sintieran vistos, especialmente quienes crecieron en el espacio cultural intermedio
+                de las borderlands. Su voz tocó a quienes vivían entre idiomas, culturas y expectativas—no solo en
+                Texas, sino en todo el país. Figuras como María García y Kristen Torres, del podcast Anything for
+                Selena, han contado cómo ella les dio sentido a sus propias luchas biculturales. Incluso para alguien
+                como yo, una persona indoestadounidense de segunda generación en Kansas, la forma en que Selena habitaba
+                su identidad híbrida fue profundamente inspiradora. Nos enseñó que no teníamos que elegir—podíamos ser
+                completas dentro de nuestro “in-between”.</p>
+            </div>
+            <model-viewer src="models/old_tv/scene.gltf" alt="3D old TV model" auto-rotate camera-controls ar
+              ar-modes="webxr scene-viewer quick-look">
+            </model-viewer>
 
-            <p>Description of the traditional Indian chapathi model.</p>
+
           </div>
-        </div>
+
+          <div class="model-block">
+            <model-viewer src="models/chapathi/scene.gltf" alt="3D chapathi model" auto-rotate camera-controls ar
+              ar-modes="webxr scene-viewer quick-look">
+            </model-viewer>
+
+            <div class="model-blurb">
+              <h2>Chapathi || Tortilla</h2>
+              <hr />
+
+              <p>En muchas culturas, hacer pan plano—ya sea tortillas o chapatis—es más que cocinar: es casi un rito de
+                iniciación. Como Julia Reyes en Yo no soy tu perfecta hija mexicana, muchas hijas de segunda o tercera
+                generación aprenden a amasar bajo la mirada crítica de una madre o abuela, solo para escuchar que “no
+                salió bien”. Ese comentario no solo habla de la comida, sino de una pérdida cultural más profunda, de no
+                ser “suficientemente” algo. Ya sea en una cocina mexicana o del sur de Asia, estas experiencias reflejan
+                el dolor de una identidad “blanqueada” y la presión por mantener tradiciones que nunca fueron totalmente
+                nuestras. Algunas, como Selena, se acercan más a sus raíces. Otras, como Kristen Torres, se sienten
+                alejadas. En ambos casos, persiste una sensación de no encajar. Pero con obras como Yo no soy tu
+                perfecta hija mexicana, muchas personas entre culturas están encontrando representación, consuelo y
+                orgullo en sus identidades mezcladas.</p>
+            </div>
+          </div>
 
       </div>
 
@@ -190,150 +293,120 @@
 
 
 
-      <div class="info-blurb" id="intro">
-        <div>
-          <h2>Una Ventaja a Selena</h2>
-          <hr />
-          <p>
-            FIXME: English premise, need to convey in spanish, include premise of buldusroman
-
-            <br /><br />
-            This project is inspired by the layered portrayals of identity in texts such as
-            <em>A House on Mango Street</em>, <em>A Room of One’s Own</em>, and
-            <em>I Am Not Your Perfect Mexican Daughter</em>. Each work explores how space,
-            silence, and self-perception shape a woman’s identity. Selena Quintanilla, though
-            celebrated, remains partly enigmatic—much of her personal interiority is unknown to
-            us. Through this immersive 3D experience, we imagine what it might have felt like to
-            exist within her creative, cultural, and private spaces. Like Julia Reyes in Erika
-            Sánchez’s novel, Selena’s journey is one of defining herself on her own terms, away
-            from external expectations. This project reflects on that quiet revelation of self.
-          </p>
-        </div>
-
-        <h2>Libros y Textos</h2>
-        <hr />
-        <!--Books & Texts-->
-        <div class="book-covers">
-          <a href="https://cdnsm5-ss3.sharpschool.com/UserFiles/Servers/Server_4204286/Image/Grade9%20HouseOnMango.pdf"
-            target="_blank" class="book-hover">
-            <img src="Images/HouseOnMangoStreet.jpg" alt="The House on Mango Street cover">
-            <div class="book-info">
-              <strong>The House on Mango Street</strong><br>
-              Sandra Cisneros, 1984
-            </div>
-          </a>
-
-          <a href="https://www.sausd.us/cms/lib/CA01000471/Centricity/Domain/241/I-Am-Not-Your-Perfect-Mexican-Daughter.pdf"
-            target="_blank" class="book-hover">
-            <img src="Images/IAmNotYourPerfectMexicanDaughter.jpg" alt="I Am Not Your Perfect Mexican Daughter cover">
-            <div class="book-info">
-              <strong>I Am Not Your Perfect Mexican Daughter</strong><br>
-              Erika L. Sánchez, 2017
-            </div>
-          </a>
-
-          <a href="https://moodle2.units.it/pluginfile.php/587558/mod_resource/content/1/borderlands_lafrontera.pdf"
-            target="_blank" class="book-hover">
-            <img src="Images/Borderlands.jpg" alt="Borderlands cover">
-            <div class="book-info">
-              <strong>Borderlands/La Frontera</strong><br>
-              Gloria Anzaldúa, 1987
-            </div>
-          </a>
-
-          <a href="https://k-state.primo.exlibrisgroup.com/permalink/01KSU_INST/1177os2/alma9943126079502401"
-            target="_blank" class="book-hover">
-            <img src="Images/SelenasSecret.jpg" alt="Selena's Secret cover">
-            <div class="book-info">
-              <strong>Selena's Secret</strong><br>
-              María Celeste Arrarás, 1997
-            </div>
-          </a>
-
-          <a href="https://www.sausd.us/cms/lib/CA01000471/Centricity/Domain/433/23_y%20no%20se%20lo%20trago%20la%20tierra.pdf"
-            target="_blank" class="book-hover">
-            <img src="Images/y-no-se-lo-trago-la-tierra.jpg" alt="...y no se lo trago la tierra cover">
-            <div class="book-info">
-              <strong>...y no se lo tragó la tierra</strong><br>
-              Tomás Rivera, 1971
-            </div>
-          </a>
-        </div>
-
-        <h2>Cine y TV</h2>
-        <hr />
-        <!--TV & Film-->
-        <div class="book-covers">
-          <a href="https://www.kanopy.com/en/product/2288423?vp=kstate" target="_blank" class="book-hover">
-            <img src="Images/CorpusAHomeMovie.jpg" alt="Corpus: A Home Movie for Selena">
-            <div class="book-info">
-              <strong>Corpus: A Home Movie for Selena</strong><br>
-              Dir. Lourdes Portillo, 1999
-            </div>
-          </a>
-
-          <a href="https://digitalcampus-swankmp-net.er.lib.k-state.edu/ksu284592/play/3d9fda4ee8888b5d?referrer=direct"
-            target="_blank" class="book-hover">
-            <img src="Images/SelenaTheMovie.jpeg" alt="Selena (1997)">
-            <div class="book-info">
-              <strong>Selena</strong><br>
-              Dir. Gregory Nava, 1997
-            </div>
-          </a>
-
-          <a href="https://www.netflix.com/title/81022733" target="_blank" class="book-hover">
-            <img src="Images/SelenaTheSeries.jpg" alt="Selena: The Series">
-            <div class="book-info">
-              <strong>Selena: The Series</strong><br>
-              Netflix, 2020–2021
-            </div>
-          </a>
-
-          <a href="https://vimeo.com/160343298" target="_blank" class="book-hover">
-            <img src="Images/Chicano!.jpg" alt="Chicano!: The Struggle in the Fields">
-            <div class="book-info">
-              <strong>Chicano! The Struggle in the Fields</strong><br>
-              PBS, 1996
-            </div>
-          </a>
-        </div>
-
-        <h2>Podcast</h2>
-        <hr />
-        <!--Podcast-->
-        <div class="book-covers">
-          <a href="https://open.spotify.com/show/1aCcf9CN3cunTBdkIzYTvo?si=66b8d7f915f24b25" target="_blank"
-            class="book-hover">
-            <img src="Images/Anything For Selena.jpeg" alt="Anything for Selena: A Podcast About Belonging">
-            <div class="book-info">
-              <strong>Anything for Selena: A Podcast About Belonging</strong><br>
-              Maria García, 2021
-            </div>
-          </a>
-        </div>
 
 
+      <h2>Libros y Textos</h2>
+      <hr />
+      <!--Books & Texts-->
+      <div class="book-covers">
+        <a href="https://cdnsm5-ss3.sharpschool.com/UserFiles/Servers/Server_4204286/Image/Grade9%20HouseOnMango.pdf"
+          target="_blank" class="book-hover">
+          <img src="Images/HouseOnMangoStreet.jpg" alt="The House on Mango Street cover">
+          <div class="book-info">
+            <strong>The House on Mango Street</strong><br>
+            Sandra Cisneros, 1984
+          </div>
+        </a>
 
-        
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/episode/0uiOumyn2ldBja4Zi0FVZd?utm_source=generator" width="100%"
-          height="152" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <a href="https://www.sausd.us/cms/lib/CA01000471/Centricity/Domain/241/I-Am-Not-Your-Perfect-Mexican-Daughter.pdf"
+          target="_blank" class="book-hover">
+          <img src="Images/IAmNotYourPerfectMexicanDaughter.jpg" alt="I Am Not Your Perfect Mexican Daughter cover">
+          <div class="book-info">
+            <strong>I Am Not Your Perfect Mexican Daughter</strong><br>
+            Erika L. Sánchez, 2017
+          </div>
+        </a>
+
+        <a href="https://moodle2.units.it/pluginfile.php/587558/mod_resource/content/1/borderlands_lafrontera.pdf"
+          target="_blank" class="book-hover">
+          <img src="Images/Borderlands.jpg" alt="Borderlands cover">
+          <div class="book-info">
+            <strong>Borderlands/La Frontera</strong><br>
+            Gloria Anzaldúa, 1987
+          </div>
+        </a>
+
+        <a href="https://k-state.primo.exlibrisgroup.com/permalink/01KSU_INST/1177os2/alma9943126079502401"
+          target="_blank" class="book-hover">
+          <img src="Images/SelenasSecret.jpg" alt="Selena's Secret cover">
+          <div class="book-info">
+            <strong>Selena's Secret</strong><br>
+            María Celeste Arrarás, 1997
+          </div>
+        </a>
+
+        <a href="https://www.sausd.us/cms/lib/CA01000471/Centricity/Domain/433/23_y%20no%20se%20lo%20trago%20la%20tierra.pdf"
+          target="_blank" class="book-hover">
+          <img src="Images/y-no-se-lo-trago-la-tierra.jpg" alt="...y no se lo trago la tierra cover">
+          <div class="book-info">
+            <strong>...y no se lo tragó la tierra</strong><br>
+            Tomás Rivera, 1971
+          </div>
+        </a>
       </div>
 
-      <!-- Career Section -->
-      <div class="info-blurb" id="carrera">
+      <h2>Cine y TV</h2>
+      <hr />
+      <!--TV & Film-->
+      <div class="book-covers">
+        <a href="https://www.kanopy.com/en/product/2288423?vp=kstate" target="_blank" class="book-hover">
+          <img src="Images/CorpusAHomeMovie.jpg" alt="Corpus: A Home Movie for Selena">
+          <div class="book-info">
+            <strong>Corpus: A Home Movie for Selena</strong><br>
+            Dir. Lourdes Portillo, 1999
+          </div>
+        </a>
 
-        <div style="display: flex; flex-direction: row;">
-          <h2>Como la Carrera</h2>
-        </div>
-        <hr />
-        <p>
-          This is placeholder text for the career section.
-        </p>
+        <a href="https://digitalcampus-swankmp-net.er.lib.k-state.edu/ksu284592/play/3d9fda4ee8888b5d?referrer=direct"
+          target="_blank" class="book-hover">
+          <img src="Images/SelenaTheMovie.jpeg" alt="Selena (1997)">
+          <div class="book-info">
+            <strong>Selena</strong><br>
+            Dir. Gregory Nava, 1997
+          </div>
+        </a>
+
+        <a href="https://www.netflix.com/title/81022733" target="_blank" class="book-hover">
+          <img src="Images/SelenaTheSeries.jpg" alt="Selena: The Series">
+          <div class="book-info">
+            <strong>Selena: The Series</strong><br>
+            Netflix, 2020–2021
+          </div>
+        </a>
+
+        <a href="https://vimeo.com/160343298" target="_blank" class="book-hover">
+          <img src="Images/Chicano!.jpg" alt="Chicano!: The Struggle in the Fields">
+          <div class="book-info">
+            <strong>Chicano! The Struggle in the Fields</strong><br>
+            PBS, 1996
+          </div>
+        </a>
       </div>
 
-      <div style="
+      <h2>Podcast</h2>
+      <hr />
+      <!--Podcast-->
+      <div class="book-covers">
+        <a href="https://open.spotify.com/show/1aCcf9CN3cunTBdkIzYTvo?si=66b8d7f915f24b25" target="_blank"
+          class="book-hover">
+          <img src="Images/Anything For Selena.jpeg" alt="Anything for Selena: A Podcast About Belonging">
+          <div class="book-info">
+            <strong>Anything for Selena: A Podcast About Belonging</strong><br>
+            Maria García, 2021
+          </div>
+        </a>
+      </div>
+
+
+
+
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/episode/0uiOumyn2ldBja4Zi0FVZd?utm_source=generator" width="100%"
+        height="152" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div style="
       margin: 0;
       padding: 0;
       width: 75vw;
@@ -343,75 +416,75 @@
       display: flex;
       justify-content: center;
       align-items: center;">
-        <iframe src="Bus/index.html" style="border: none; width: 100vw; height: 100%;"></iframe>
-      </div>
+      <iframe src="Bus/index.html" style="border: none; width: 100vw; height: 100%;"></iframe>
+    </div>
 
 
-      <!-- Citations Section -->
-      <div id="citas">
-        <h1 style="text-align: center;">Citas</h1>
-        <hr />
+    <!-- Citations Section -->
+    <div id="citas">
+      <h1 style="text-align: center;">Citas</h1>
+      <hr />
 
-        <!-- CSS Animated Flowers Citation-->
-        <h2>CSS Animations</h2>
-        <ul>
-          <li>
-            <strong><a href="https://gist.github.com/fikkkhdyt/8d6e85fff6a608e990f547e5f8bca889#file-style-scss">CSS
-                Blossoming Flowers at Magical Night</a></strong> by <a href="https://codepen.io/fikkkhdyt"
-              target="_blank">fikkkhydt</a> — <a href="https://flowernight.netlify.app/" target="_blank">View
-              Original</a> — <a href="https://codepen.io/license/pen/GRGVmOo" target="_blank">CC Attribution</a> —
-            (Modified by Supriya Bolla)
-          </li>
+      <!-- CSS Animated Flowers Citation-->
+      <h2>CSS Animations</h2>
+      <ul>
+        <li>
+          <strong><a href="https://gist.github.com/fikkkhdyt/8d6e85fff6a608e990f547e5f8bca889#file-style-scss">CSS
+              Blossoming Flowers at Magical Night</a></strong> by <a href="https://codepen.io/fikkkhdyt"
+            target="_blank">fikkkhydt</a> — <a href="https://flowernight.netlify.app/" target="_blank">View
+            Original</a> — <a href="https://codepen.io/license/pen/GRGVmOo" target="_blank">CC Attribution</a> —
+          (Modified by Supriya Bolla)
+        </li>
 
-          <li>
-            <strong><a href="https://codepen.io/doff3n/pen/NWqxyoE" target="_blank">Bus Animation</a></strong> by <a
-              href="https://codepen.io/doff3n" target="_blank">doff3n</a> — <a
-              href="https://codepen.io/doff3n/pen/NWqxyoE" target="_blank">View Original</a> — <a
-              href="https://codepen.io/license/pen/NWqxyoE" target="_blank">CC Attribution</a> — (Modified by Supriya
-            Bolla)
-          </li>
-        </ul>
+        <li>
+          <strong><a href="https://codepen.io/doff3n/pen/NWqxyoE" target="_blank">Bus Animation</a></strong> by <a
+            href="https://codepen.io/doff3n" target="_blank">doff3n</a> — <a
+            href="https://codepen.io/doff3n/pen/NWqxyoE" target="_blank">View Original</a> — <a
+            href="https://codepen.io/license/pen/NWqxyoE" target="_blank">CC Attribution</a> — (Modified by Supriya
+          Bolla)
+        </li>
+      </ul>
 
-        <!-- 3D Model Citations -->
-        <h2>3D Models</h2>
-        <ul>
-          <li>
-            <strong>Female Head Sculpt</strong> by Aconear —
-            <a href="https://skfb.ly/oGBKK" target="_blank">View on Sketchfab</a> —
-            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
-          </li>
-          <li>
-            <strong>Microphone</strong> by Aike —
-            <a href="https://skfb.ly/Kzvy" target="_blank">View on Sketchfab</a> —
-            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
-          </li>
-          <li>
-            <strong>[Viola Desmond] Beauty Salon</strong> by circles xr —
-            <a href="https://skfb.ly/oQMsy" target="_blank">View on Sketchfab</a> —
-            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
-          </li>
-          <li>
-            <strong>Fabergé “Blender” Style</strong> by smice —
-            <a href="https://skfb.ly/oPSwY" target="_blank">View on Sketchfab</a> —
-            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
-          </li>
-          <li>
-            <strong>Minimalistic Modern Bedroom</strong> by dylanheyes —
-            <a href="https://skfb.ly/oCnNx" target="_blank">View on Sketchfab</a> —
-            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
-          </li>
-          <li>
-            <strong>Old TV</strong> by danny_p3d —
-            <a href="https://skfb.ly/6GzXJ" target="_blank">View on Sketchfab</a> —
-            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
-          </li>
-          <li>
-            <strong>Chapathi</strong> by Sandeep Kakani —
-            <a href="https://skfb.ly/6Y8Zo" target="_blank">View on Sketchfab</a> —
-            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
-          </li>
-        </ul>
-      </div>
+      <!-- 3D Model Citations -->
+      <h2>3D Models</h2>
+      <ul>
+        <li>
+          <strong>Female Head Sculpt</strong> by Aconear —
+          <a href="https://skfb.ly/oGBKK" target="_blank">View on Sketchfab</a> —
+          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
+        </li>
+        <li>
+          <strong>Microphone</strong> by Aike —
+          <a href="https://skfb.ly/Kzvy" target="_blank">View on Sketchfab</a> —
+          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
+        </li>
+        <li>
+          <strong>[Viola Desmond] Beauty Salon</strong> by circles xr —
+          <a href="https://skfb.ly/oQMsy" target="_blank">View on Sketchfab</a> —
+          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
+        </li>
+        <li>
+          <strong>Fabergé “Blender” Style</strong> by smice —
+          <a href="https://skfb.ly/oPSwY" target="_blank">View on Sketchfab</a> —
+          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
+        </li>
+        <li>
+          <strong>Minimalistic Modern Bedroom</strong> by dylanheyes —
+          <a href="https://skfb.ly/oCnNx" target="_blank">View on Sketchfab</a> —
+          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
+        </li>
+        <li>
+          <strong>Old TV</strong> by danny_p3d —
+          <a href="https://skfb.ly/6GzXJ" target="_blank">View on Sketchfab</a> —
+          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
+        </li>
+        <li>
+          <strong>Chapathi</strong> by Sandeep Kakani —
+          <a href="https://skfb.ly/6Y8Zo" target="_blank">View on Sketchfab</a> —
+          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC Attribution</a>
+        </li>
+      </ul>
+    </div>
 
 
 
