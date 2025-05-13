@@ -14,10 +14,14 @@
   <!-- Sidebar Navigation -->
   <nav class="sidebar">
     <ul>
+      <li style="margin:5% ; font-size: 2%; text-align: center;">KSU: SPAN 560 || Supriya Bolla</li>
       <li><a class="active" href="#modelos">Inicio</a></li>
       <li><a href="#intro">Intro</a></li>
       <li><a href="#carrera">Carrera</a></li>
+      <li><a href="#personal">Vida Personal</a></li>
+      <li><a href="#spanglish">Spanglish</a></li>
       <li><a href="#citas">Citas</a></li>
+      <li><a href="404.html">404</a></li>
     </ul>
     <div style="margin: 10px; height: 100%;">
       <iframe style="border-radius:12px"
@@ -42,52 +46,146 @@
     <div class="container overlayed-back">
 
       <h1 class="main-header">Entre A Mi Mundo</h1>
+      <hr />
       <p class="subtitle">Una experiencia inmersiva en 3D en la mente de Selena.</p>
+
+
+
+      <div class="hoverable-container">
+        <img class="hoverable-image" src="Images/Selenaheadmodelrooms.png"
+          alt="La mente de Selena dividido por habitaciónes">
+        <div class="hoverable-overlay">
+          <div class="hoverable-text">
+            <div class="info-blurb">
+              <h3>Tesis:</h3>
+              <hr />
+              <p>
+                A través de un modelo digital interactivo, este proyecto explora las complejidades de la identidad de
+                Selena
+                Quintanilla al presentar distintas facetas de su vida personal y profesional —como artista, mujer
+                mexicoamericana, y figura pública— que fueron moldeadas, incomprendidas o distorsionadas por los medios.
+                Mediante un entorno virtual dividido en "habitaciones" simbólicas, se busca representar lo que quizás
+                existía en
+                su mundo interior, más allá de la narrativa impuesta por la fama.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+
 
       <!-- 3D Models -->
 
       <div class="model-wrapper" id="modelos">
 
-        <model-viewer src="models/Head6.glb" alt="3D head model" auto-rotate camera-controls ar
-          ar-modes="webxr scene-viewer quick-look" href="#intro">
-        </model-viewer>
+        <div class="model-block">
+          <model-viewer src="models/Head6.glb" alt="3D head model" auto-rotate camera-controls ar
+            ar-modes="webxr scene-viewer quick-look" href="#intro">
+          </model-viewer>
 
-        <model-viewer src="models/microphone/scene.gltf" alt="3D microphone model" auto-rotate camera-controls ar
-          ar-modes="webxr scene-viewer quick-look" href="#carrera">
-        </model-viewer>
+          <div class="model-blurb">
+            <h2>Intro: En la Mente de Selena</h2>
+            <hr />
+            <p>This is a description lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum
+              dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+          </div>
+        </div>
 
-        <model-viewer src="models/viola_desmond_beauty_salon/scene.gltf" alt="3D salon model" auto-rotate
-          camera-controls ar ar-modes="webxr scene-viewer quick-look">
-        </model-viewer>
+        <div class="model-block">
 
-        <model-viewer src="models/faberge_blender_style/scene.gltf" alt="3D Fabergé model" auto-rotate camera-controls
-          ar ar-modes="webxr scene-viewer quick-look">
-        </model-viewer>
+          <div class="model-blurb">
+            <h2>El Estudio de Grabación</h2>
+            <hr />
 
-        <model-viewer src="models/minimalistic_modern_bedroom/scene.gltf" alt="3D bedroom model" auto-rotate
-          camera-controls ar ar-modes="webxr scene-viewer quick-look">
-        </model-viewer>
+            <p>Description of the 3D microphone model.</p>
+          </div>
 
-        <model-viewer src="models/old_tv/scene.gltf" alt="3D old TV model" auto-rotate camera-controls ar
-          ar-modes="webxr scene-viewer quick-look">
-        </model-viewer>
+          <model-viewer src="models/microphone/scene.gltf" alt="3D microphone model" auto-rotate camera-controls ar
+            ar-modes="webxr scene-viewer quick-look" href="#carrera">
+          </model-viewer>
 
-        <model-viewer src="models/chapathi/scene.gltf" alt="3D chapathi model" auto-rotate camera-controls ar
-          ar-modes="webxr scene-viewer quick-look">
-        </model-viewer>
+
+        </div>
+
+        <div class="model-block">
+          <model-viewer src="models/viola_desmond_beauty_salon/scene.gltf" alt="3D salon model" auto-rotate
+            camera-controls ar ar-modes="webxr scene-viewer quick-look">
+          </model-viewer>
+
+          <div class="model-blurb">
+            <h2>La Botique</h2>
+            <hr />
+
+            <p>Description of the Viola Desmond beauty salon model.</p>
+          </div>
+        </div>
+
+        <div class="model-block">
+          <div class="model-blurb">
+            <h2>Pasatiempos: Fabergé</h2>
+            <hr />
+
+            <p>Description of the Fabergé egg model styled in Blender.</p>
+          </div>
+
+          <model-viewer src="models/faberge_blender_style/scene.gltf" alt="3D Fabergé model" auto-rotate camera-controls
+            ar ar-modes="webxr scene-viewer quick-look">
+          </model-viewer>
+
+
+        </div>
+
+        <div class="model-block">
+          <model-viewer src="models/minimalistic_modern_bedroom/scene.gltf" alt="3D bedroom model" auto-rotate
+            camera-controls ar ar-modes="webxr scene-viewer quick-look">
+          </model-viewer>
+
+          <div class="model-blurb">
+            <h2>Modern Bedroom Model</h2>
+            <hr />
+
+            <p>Description of the minimalistic modern bedroom model.</p>
+          </div>
+        </div>
+
+        <div class="model-block">
+
+          <div class="model-blurb">
+            <h2>Old TV Model</h2>
+            <hr />
+
+            <p>Description of the vintage television model.</p>
+          </div>
+          <model-viewer src="models/old_tv/scene.gltf" alt="3D old TV model" auto-rotate camera-controls ar
+            ar-modes="webxr scene-viewer quick-look">
+          </model-viewer>
+
+
+        </div>
+
+        <div class="model-block">
+          <model-viewer src="models/chapathi/scene.gltf" alt="3D chapathi model" auto-rotate camera-controls ar
+            ar-modes="webxr scene-viewer quick-look">
+          </model-viewer>
+
+          <div class="model-blurb">
+            <h2>Chapathi Model</h2>
+            <hr />
+
+            <p>Description of the traditional Indian chapathi model.</p>
+          </div>
+        </div>
+
       </div>
+
 
       <!-- Introduction Section -->
 
-      <div class="info-blurb">
-        <h3>Tesis:</h3>
-        <p>A través de un modelo digital interactivo, este proyecto explora las complejidades de la identidad de Selena
-          Quintanilla al presentar distintas facetas de su vida personal y profesional —como artista, mujer
-          mexicoamericana, y figura pública— que fueron moldeadas, incomprendidas o distorsionadas por los medios.
-          Mediante un entorno virtual dividido en "habitaciones" simbólicas, se busca representar lo que quizás existía
-          en
-          su mundo interior, más allá de la narrativa impuesta por la fama.</p>
-      </div>
+
 
       <div class="info-blurb" id="intro">
         <div>
@@ -109,6 +207,8 @@
           </p>
         </div>
 
+        <h2>Libros y Textos</h2>
+        <hr />
         <!--Books & Texts-->
         <div class="book-covers">
           <a href="https://cdnsm5-ss3.sharpschool.com/UserFiles/Servers/Server_4204286/Image/Grade9%20HouseOnMango.pdf"
@@ -157,7 +257,8 @@
           </a>
         </div>
 
-
+        <h2>Cine y TV</h2>
+        <hr />
         <!--TV & Film-->
         <div class="book-covers">
           <a href="https://www.kanopy.com/en/product/2288423?vp=kstate" target="_blank" class="book-hover">
@@ -194,6 +295,8 @@
           </a>
         </div>
 
+        <h2>Podcast</h2>
+        <hr />
         <!--Podcast-->
         <div class="book-covers">
           <a href="https://open.spotify.com/show/1aCcf9CN3cunTBdkIzYTvo?si=66b8d7f915f24b25" target="_blank"
@@ -243,7 +346,8 @@
 
       <!-- Citations Section -->
       <div id="citas">
-        <h1>Credits</h1>
+        <h1 style="text-align: center;">Citas</h1>
+        <hr />
 
         <!-- CSS Animated Flowers Citation-->
         <h2>CSS Animations</h2>
@@ -260,7 +364,8 @@
             <strong><a href="https://codepen.io/doff3n/pen/NWqxyoE" target="_blank">Bus Animation</a></strong> by <a
               href="https://codepen.io/doff3n" target="_blank">doff3n</a> — <a
               href="https://codepen.io/doff3n/pen/NWqxyoE" target="_blank">View Original</a> — <a
-              href="https://codepen.io/license/pen/NWqxyoE" target="_blank">CC Attribution</a> — (Modified by Supriya Bolla)
+              href="https://codepen.io/license/pen/NWqxyoE" target="_blank">CC Attribution</a> — (Modified by Supriya
+            Bolla)
           </li>
         </ul>
 
@@ -304,6 +409,7 @@
           </li>
         </ul>
       </div>
+
 
 
     </div>

@@ -107,20 +107,43 @@ body, html {
 
 /* Model viewer section */
 .model-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.model-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px; /* Optional spacing between viewer and text */
+}
+
+.model-blurb {
+  flex: 1; /* Fills remaining space */
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  min-width: 0; /* Prevents overflow in flex containers */
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  margin: 10px 0;
 }
 
 model-viewer {
-  width: 100%;
-  height: 400px;
+  flex-shrink: 0; /* Prevents shrinking */
+  width: 50vh;
+  height: 50vh;
   background-color: #0f0017aa;
   border: 2px solid #27002e;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 model-viewer:hover {
   transform: scale(1.03);
@@ -232,3 +255,52 @@ model-viewer:hover {
 .book-hover:hover .book-info {
   opacity: 1;
 }
+
+.hoverable-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hoverable-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.hoverable-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 37, 49, 0.8);
+  border-radius: 10%;
+  overflow-y: auto; /* Allow scrolling inside the overlay */
+}
+
+.hoverable-container:hover .hoverable-overlay {
+  opacity: 1;
+}
+
+.hoverable-text {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 90%;
+  width: 90%;
+  overflow-y: auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.info-blurb h3 {
+  margin-top: 0;
+}
+
